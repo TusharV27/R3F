@@ -29,7 +29,7 @@ function Login() {
         localStorage.setItem("userName", userName);
         localStorage.setItem("Whatsapp", Whatsapp);
         axios
-          .post("https://megascalebackend.vercel.app/user", {
+          .post("https://megascalebackend.vercel.app/", {
             name: userName,
             mobile: Whatsapp,
           })

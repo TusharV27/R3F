@@ -13,7 +13,7 @@ const UserTable = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "https://megascalebackend.vercel.app/user"
+          "https://megascalebackend.vercel.app/"
         );
         console.log(response.data.data);
         setUsers(response.data.data.reverse()); // Assuming response.data is an array of user objects
