@@ -22,7 +22,7 @@ function Login() {
   }, []);
 
   const handleSubmit = () => {
-    if (userName === "" || Whatsapp === "") {
+    if (userName === "" || Whatsapp === "" || userName.length >= 30) {
       alert("Please fill all the fields");
     } else {
       if (Whatsapp.length === 10) {
